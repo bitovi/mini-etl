@@ -1,0 +1,16 @@
+pipeline:
+- name: PyPDF
+  transformer: /app/transformers/extract-from-pdf/pypdf.py
+  copy_src_files: true
+- name: Unstructured
+  transformer: /app/transformers/extract-from-pdf/unstructured.py
+  copy_src_files: true
+- name: PyPDFium2
+  transformer: /app/transformers/extract-from-pdf/PyPDFium2Loader.py
+  copy_src_files: true
+- name: PDFMiner
+  transformer: /app/transformers/extract-from-pdf/pdfminer.py
+  copy_src_files: true
+- name: PyMuPDF
+  transformer: /app/transformers/extract-from-pdf/PyMuPDF.py
+  copy_src_files: true
