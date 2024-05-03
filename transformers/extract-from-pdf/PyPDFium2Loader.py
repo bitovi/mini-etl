@@ -1,11 +1,12 @@
 import sys
 import os
 import shutil
-from helpers import log_directories
+from helpers import log_directories, hello_from_script
 
 from langchain_community.document_loaders import PyPDFium2Loader
 
 def run(input_dir, output_dir, config, step):
+    hello_from_script(__file__)
     log_directories(input_dir, output_dir, config, step)
 
     # find all pdfs in input_dir
