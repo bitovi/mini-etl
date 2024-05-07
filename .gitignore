@@ -1,7 +1,4 @@
 examples-local
-examples/**
-!examples/**/pipeline.yaml
-!examples/**/input/langchain-training.pdf
 
 .DS_Store
 __pycache__
