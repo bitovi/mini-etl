@@ -1,3 +1,5 @@
 examples-local
 .env
 .DS_Store
+__pycache__
+*.pyc
