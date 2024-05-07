@@ -4,6 +4,13 @@ import importlib.util
 import sys
 from dotenv import load_dotenv
 
+# allow importing local modules
+from pathlib import Path
+path_root = Path(__file__).parents[2]
+sys.path.append(str(path_root))
+print(f"System Path: {sys.path}")
+
+
 print("=====================================")
 print("# Running ETL script")
 print("=====================================")
