@@ -1,5 +1,8 @@
 examples-local
-.env
+examples/**
+langchain-training.pdf.*.txt
+!langchain-training.pdf
+
 .DS_Store
 __pycache__
 *.pyc

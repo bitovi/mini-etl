@@ -1,7 +1,6 @@
-import sys
-import os
-import shutil
-from helpers import log_directories, hello_from_script
+import sys, os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+from helpers import hello_from_script, log_directories
 
 from langchain_community.document_loaders import PyPDFLoader
 

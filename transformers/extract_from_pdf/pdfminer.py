@@ -1,5 +1,8 @@
-from langchain_community.document_loaders import PDFMinerLoader
+import sys, os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 from helpers import hello_from_script, log_directories, extract_text_from_all_pdfs
+
+from langchain_community.document_loaders import PDFMinerLoader
 
 def run(input_dir, output_dir, config, step):
     hello_from_script(__file__)  # Pass the __file__ from the calling script
