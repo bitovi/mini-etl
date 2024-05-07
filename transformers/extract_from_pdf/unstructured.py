@@ -19,7 +19,11 @@ def run(input_dir, output_dir, config, step):
             extract_text_from_pdf(input_dir, output_dir, file)
 
 
+
+
+
 def extract_text_from_pdf(input_dir, output_dir, file, output_file_extension=".unstructured.txt"):
+    print("not in helper")
     pdf_path = f"{input_dir}/{file}"
 
     print(f"Extracting text from {pdf_path}")

@@ -8,9 +8,9 @@ pipeline:
 - name: PyPDFium2
   transformer: /app/transformers/extract_from_pdf/PyPDFium2Loader.py
   copy_src_files: true
-# - name: PDFMiner
-#   transformer: /app/transformers/extract_from_pdf/pdfminer.py
-#   copy_src_files: true
-# - name: PyMuPDF
-#   transformer: /app/transformers/extract_from_pdf/PyMuPDF.py
-#   copy_src_files: true
+- name: PDFMiner
+  transformer: /app/transformers/extract_from_pdf/pdfminer.py
+  copy_src_files: true
+- name: PyMuPDF
+  transformer: /app/transformers/extract_from_pdf/PyMuPDF.py
+  copy_src_files: true
