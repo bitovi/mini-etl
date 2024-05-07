@@ -1,7 +1,7 @@
 examples-local
 examples/**
-langchain-training.pdf.*.txt
-!langchain-training.pdf
+!examples/**/pipeline.yaml
+!examples/**/input/langchain-training.pdf
 
 .DS_Store
 __pycache__
