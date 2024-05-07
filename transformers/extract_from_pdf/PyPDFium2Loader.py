@@ -1,13 +1,12 @@
-import sys
-import os
-import shutil
+import sys, os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+from helpers import hello_from_script, log_directories
+
 from langchain_community.document_loaders import PyPDFium2Loader
 
 def run(input_dir, output_dir, config, step):
-    print(f"Input dir: {input_dir}")
-    print(f"Output dir: {output_dir}")
-    print(f"Config: {config}")
-    print(f"Step: {step}")
+    hello_from_script(__file__)
+    log_directories(input_dir, output_dir, config, step)
 
     # find all pdfs in input_dir
     # for each pdf, extract text and save to new directory in output_dir

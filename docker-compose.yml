@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metl
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: /bin/bash -c 'sleep infinity'
